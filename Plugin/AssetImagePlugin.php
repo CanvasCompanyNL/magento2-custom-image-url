@@ -1,24 +1,25 @@
 <?php
 
-namespace Fruitcake\CustomImageUrl\Plugin;
+namespace CanvasCompanyNL\CustomImageUrl\Plugin;
 
-use Fruitcake\CustomImageUrl\Helper\Data;
+use CanvasCompanyNL\CustomImageUrl\Helper\Data;
 use Magento\Catalog\Model\View\Asset\Image;
+use Magento\Framework\Exception\LocalizedException;
 
-class AssetImagePlugin
+readonly class AssetImagePlugin
 {
-    /** @var Data $helper */
-    private $helper;
-
-    public function __construct(Data $helper)
+    /**
+     * @param Data $helper
+     */
+    public function __construct(private Data $helper)
     {
-        $this->helper = $helper;
     }
 
     /**
      * Change the custom URL
      *
-     * @return bool
+     * @return string
+     * @throws LocalizedException
      */
     public function afterGetUrl(Image $subject, $result)
     {

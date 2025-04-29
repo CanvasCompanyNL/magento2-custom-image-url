@@ -4,6 +4,6 @@
 
     <type name="Magento\Catalog\Model\View\Asset\Image">
         <plugin name="fruitcake_customer_image_url_asset_image_after_get_url"
-                type="Fruitcake\CustomImageUrl\Plugin\AssetImagePlugin"/>
+                type="CanvasCompanyNL\CustomImageUrl\Plugin\AssetImagePlugin"/>
     </type>
 </config>

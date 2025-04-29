@@ -5,7 +5,7 @@
             <group id="url">
                 <field id="catalog_media_url_format_custom_type" translate="label comment" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
                     <label>Custom URL format</label>
-                    <source_model>Fruitcake\CustomImageUrl\Model\Config\Source\CustomUrlType</source_model>
+                    <source_model>CanvasCompanyNL\CustomImageUrl\Model\Config\Source\CustomUrlType</source_model>
                     <depends>
                         <field id="catalog_media_url_format">image_optimization_parameters</field>
                     </depends>
@@ -51,7 +51,7 @@
                         <field id="catalog_media_url_format">image_optimization_parameters</field>
                         <field id="catalog_media_url_format_custom_type">imgproxy</field>
                     </depends>
-                    <source_model>Fruitcake\CustomImageUrl\Model\Config\Source\ImgproxyResizeType</source_model>
+                    <source_model>CanvasCompanyNL\CustomImageUrl\Model\Config\Source\ImgproxyResizeType</source_model>
                     <comment><![CDATA[The Resize type]]></comment>
                 </field>
                 <field id="catalog_media_url_format_custom_imgproxy_source_type" translate="label comment" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="0">
@@ -60,7 +60,7 @@
                         <field id="catalog_media_url_format">image_optimization_parameters</field>
                         <field id="catalog_media_url_format_custom_type">imgproxy</field>
                     </depends>
-                    <source_model>Fruitcake\CustomImageUrl\Model\Config\Source\ImgproxySourceType</source_model>
+                    <source_model>CanvasCompanyNL\CustomImageUrl\Model\Config\Source\ImgproxySourceType</source_model>
                     <comment><![CDATA[Use URL to proxy the URL directly. Otherwise the path be passed (eg /media/catalog etc)]]></comment>
                 </field>
                 <field id="catalog_media_url_format_custom_imgproxy_source_prefix" translate="label comment" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="0">
