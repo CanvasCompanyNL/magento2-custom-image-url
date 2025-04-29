@@ -15,7 +15,6 @@
   "type": "magento2-module",
   "require": {
     "php": "^8.3.0",
-    "magento/framework": "^103.0.7",
     "magento/module-catalog": "^104.0.7"
   },
   "autoload": {
